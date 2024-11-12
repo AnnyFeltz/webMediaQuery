@@ -3,16 +3,18 @@ h1 {
     font-size: 50px;
 }
 
-@media (max-width: 720px){
+/* Para telas de até 720px de largura (celulares e tablets pequenos) */
+@media (max-width: 720px) {
     h1 {
         color: blue;
         font-size: 30px;
     }
 }
 
-@media (max-width: 1600px) and (orientation: landscape){
+/* Para telas de até 1600px de largura e orientação paisagem (dispositivos maiores ou em modo paisagem) */
+@media (max-width: 1600px) and (orientation: landscape) {
     h1 {
         color: blue;
-        font-size: 30px;
+        font-size: 40px;
     }
 }
