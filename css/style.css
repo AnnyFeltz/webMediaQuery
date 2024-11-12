@@ -2,10 +2,30 @@ h1 {
     color: red;
 }
 
-/* 2 - sintaxe, apenas para telas*/
-/*screen - tela; print - imprimir*/
-@media screen and (max-widht: 500px){
-    h1{
-        color:blue;
+/* 2 - sintaxe, apenas para telas; estilos: all, screen, print, speech*/
+/*screen - tela*/
+@media screen and (max-width: 500px){
+    h1 {
+        color: blue;
+    }
+}
+
+/* 3 outros modos*/
+/*all, screen, print, speech*/
+@media print{
+    h1 {
+        color: green
+    }
+}
+
+@media (min-width: 200px){
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    h1 {
+        color: purple
     }
 }
