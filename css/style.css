@@ -1,0 +1,11 @@
+h1 {
+    color: red;
+}
+
+/* 2 - sintaxe, apenas para telas*/
+/*screen - tela; print - imprimir*/
+@media screen and (max-widht: 500px){
+    h1{
+        color:blue;
+    }
+}
