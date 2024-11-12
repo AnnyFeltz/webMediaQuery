@@ -3,15 +3,6 @@ h1 {
     font-size: 50px;
 }
 
-/* 2 - sintaxe, apenas para telas; estilos: all, screen, print, speech*/
-/*screen - tela*/
-@media (max-width: 1600px) and (orientation: landscape){
-    h1 {
-        color: blue;
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 720px){
     h1 {
         color: blue;
@@ -19,5 +10,9 @@ h1 {
     }
 }
 
-/* 3 outros modos*/
-/*all, screen, print, speech*/
+@media (max-width: 1600px) and (orientation: landscape){
+    h1 {
+        color: blue;
+        font-size: 30px;
+    }
+}
