@@ -6,15 +6,15 @@ h1 {
 /*celular*/
 
 /*em pé*/
-@media (max-width: 767) and (orientation: portrait){
-    h1{
+@media (max-width: 767px) and (orientation: portrait){
+    h1 {
         color: red;
     }
 }
 
 /*deitado*/
-@media (max-width: 767) and (orientation: landscape){
-    h1{
+@media (max-width: 767px) and (orientation: landscape){
+    h1 {
         color: orange;
     }
 }
@@ -22,23 +22,23 @@ h1 {
 /*tablet*/
 
 /*em pé*/
-@media (min-width: 768) and (max-width: 1280px) and (orientation: portrait){
-    h1{
+@media (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+    h1 {
         color: yellow;
     }
 }
 
 /*deitado*/
-@media (min-width: 768) and (max-width: 1280px) and (orientation: landscape){
-    h1{
+@media (min-width: 768px) and (max-width: 1280px) and (orientation: landscape){
+    h1 {
         color: green;
     }
 }
 
 /*computador*/
 
-@media (min-width: 1280) and (max-width: 1440px) and (orientation: landscape){
-    h1{
+@media (min-width: 1280px) and (max-width: 1440px) and (orientation: landscape){
+    h1 {
         color: blue;
     }
 }
