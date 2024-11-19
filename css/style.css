@@ -3,15 +3,65 @@
 }
 
 body {
-    background-color: rgb(148, 58, 103);
-    width: 100%;
+    background-color: rgb(0, 0, 0);
+    width: auto;
     height: auto;
 }
 
-cabecalho{
-    background-color: rgb(148, 58, 103);
+#cabecalho {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    width: auto;
+    height: fit-content;
+    justify-content: center;
+}
+
+#cabecalho img {
+    width: 300px;
+    height: auto;
+}
+
+#conteudo {
+    display: flex;
+    background-color: rgb(50, 50, 50);
+    padding: 30px;
+    width: auto;
+    height: 500px;
+    justify-content: center;
+}
+
+#menu {
+    display: block;
+    background-color: rgb(41, 41, 41);
     width: 100%;
-    height: 200px;
+    justify-items: center;
+}
+
+#menu il {
+    display: flex;
+    background-color: rgb(59, 59, 59);
+    border: 2px white solid;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    height: fit-content;
+    justify-content: center;
+    margin: 10px;
+}
+
+#rodape {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    width: auto;
+    height: fit-content;
+    justify-content: center;
+}
+
+#tipo {
+    color: white;
+    font-size: 20px;
 }
 
 h1 {
@@ -23,15 +73,19 @@ h1 {
 
 /*em pé*/
 @media (max-width: 767px) and (orientation: portrait) {
-    h1 {
-        color: white;
+    #tipo {
+        color: red;
+        font-size: 250%;
+
     }
 }
 
 /*deitado*/
 @media (max-width: 767px) and (orientation: landscape) {
-    h1 {
-        color: white;
+    #tipo {
+        color: orange;
+        font-size: 250%;
+
     }
 }
 
@@ -39,22 +93,28 @@ h1 {
 
 /*em pé*/
 @media (min-width: 768px) and (max-width: 1280px) and (orientation: portrait) {
-    h1 {
-        color: white;
+    #tipo {
+        color: yellow;
+        font-size: 250%;
+
     }
 }
 
 /*deitado*/
 @media (min-width: 768px) and (max-width: 1280px) and (orientation: landscape) {
-    h1 {
-        color: white;
+    #tipo {
+        color: green;
+        font-size: 250%;
+
     }
 }
 
 /*computador*/
 
 @media (min-width: 1280px) and (max-width: 1440px) and (orientation: landscape) {
-    h1 {
-        color: white;
+    #tipo {
+        color: cyan;
+        font-size: 250%;
+
     }
 }
