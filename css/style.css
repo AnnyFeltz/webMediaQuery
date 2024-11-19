@@ -8,6 +8,11 @@ body {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 #cabecalho {
     display: flex;
     background-color: rgb(0, 0, 0);
@@ -32,10 +37,12 @@ body {
 }
 
 #menu {
-    display: block;
+    display: flex;
     background-color: rgb(41, 41, 41);
-    width: 100%;
-    justify-items: center;
+    width: auto;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5px;
 }
 
 #menu il {
@@ -44,11 +51,13 @@ body {
     border: 2px white solid;
     border-radius: 10px;
     width: 100px;
-    padding: 5px;
+    padding: 10px 20px 10px 20px;
     height: fit-content;
+    font-size: 30px;
     justify-content: center;
-    margin: 10px;
 }
+
+
 
 #rodape {
     display: flex;
