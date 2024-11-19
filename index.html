@@ -13,7 +13,7 @@
     <script src="lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <div id="cabecalho">
         <img id="" src="css/img/logo.png">
     </div>
@@ -25,7 +25,7 @@
         });
 
     </script>
-    
+
     <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
 
     <ul id="menu">
@@ -47,16 +47,25 @@
     </ul>
 
     <div id="conteudo">
-        
+
     </div>
 
     <div id="rodape">
+
         <div id="tipo">
             ?? TIPO ??
         </div>
     </div>
 
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 767){
+                menu.style.display = 'flex'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
 
         function clickMenu() {
             if (menu.style.display == 'block') {

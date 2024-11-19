@@ -37,7 +37,7 @@ a {
 }
 
 #menu {
-    display: block;
+    display: none;
     background-color: rgb(41, 41, 41);
     width: auto;
     list-style: none;
@@ -96,16 +96,8 @@ h1 {
     }
 
     #menu li {
-        display: flex;
-        background-color: rgb(59, 59, 59);
-        border: 2px white solid;
-        border-radius: 10px;
-        width: 90%;
         padding: 5px 15px 5px 15px;
-        height: fit-content;
         font-size: 20px;
-        justify-content: center;
-        margin: 10px;
     }
 }
 
@@ -115,6 +107,18 @@ h1 {
         color: orange;
         font-size: 250%;
 
+    }
+}
+
+@media (min-width: 767px) {
+    #burguer {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        width: auto;
+        justify-content: space-around;
     }
 }
 
