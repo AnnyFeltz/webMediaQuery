@@ -17,25 +17,33 @@
     <div id="cabecalho">
         <img id="" src="css/img/logo.png">
     </div>
+
+    <script>
+        lightbox.options({
+            'fitImagesInViewport': true,
+            'fadeDuration': 100
+        });
+
+    </script>
     
     <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
 
     <ul id="menu">
-        <il>
+        <li>
             <a href="css/img/flowey.png" data-lightbox="flowey">Flowey</a>
-        </il>
-        <il>
+        </li>
+        <li>
             <a href="css/img/frisk.png" data-lightbox="frisk">Frisk</a>
-        </il>
-        <il>
+        </li>
+        <li>
             <a href="css/img/papyrus.png" data-lightbox="papyrus">Papyrus</a>
-        </il>
-        <il>
+        </li>
+        <li>
             <a href="css/img/sans.png" data-lightbox="sans">Sans</a>
-        </il>
-        <il>
+        </li>
+        <li>
             <a href="css/img/temmie.png" data-lightbox="temmie">Temmie</a>
-        </il>
+        </li>
     </ul>
 
     <div id="conteudo">
@@ -47,6 +55,17 @@
             ?? TIPO ??
         </div>
     </div>
+
+    <script>
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 
 </body>
 
