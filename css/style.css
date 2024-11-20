@@ -13,6 +13,11 @@ a {
     color: white;
 }
 
+@font-face {
+    font-family: "wonder";
+    src: url("font/wondercity/Wondercity.otf");
+}
+
 #cabecalho {
     display: flex;
     background-color: rgb(172, 136, 97);
@@ -30,11 +35,75 @@ a {
 
 #conteudo {
     display: flex;
-    background-image: url(img/paperBackground.jpg);
+    background-image: url("img/paperBackground.jpg");
     padding: 30px;
     width: auto;
     height: 500px;
     justify-content: center;
+}
+
+#origami {
+    display: flex;
+}
+
+#papel {
+    display: flex;
+}
+
+#contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url("img/paperBackground.jpg");
+    font-family: "wonder";
+    padding: 30px;
+}
+
+#formulario {
+    grid-column: 1;
+    display: flow-root;
+    justify-self: center;
+    align-self: center;
+}
+
+#formulario input {
+    margin: 5px;
+}
+
+#formulario label {
+    margin: 5px;
+}
+
+#formulario textarea {
+    margin: 5px;
+}
+
+#nome {
+    width: 100%;
+    margin: 5px;
+}
+
+#email {
+    width: 100%;
+    margin: 5px;
+}
+
+#sugestao {
+    width: 100%;
+    margin: 5px;
+}
+
+#enviar {
+    width: 100px;
+    margin: 5px;
+}
+
+#gif {
+    grid-column: 2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 350px;
+    height: auto;
 }
 
 #menu {
@@ -43,6 +112,7 @@ a {
     width: auto;
     list-style: none;
     padding: 5px;
+    font-family: "wonder";
 }
 
 #menu li {
@@ -75,6 +145,7 @@ a {
     width: auto;
     height: auto;
     justify-content: center;
+    font-family: "wonder";
 }
 
 #tipo {
