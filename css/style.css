@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(172, 136, 97);
     width: auto;
     height: auto;
 }
@@ -15,7 +15,22 @@ a {
 
 @font-face {
     font-family: "wonder";
-    src: url("font/wondercity/Wondercity.otf");
+    src: url("font/Wondercity.otf");
+}
+
+@font-face {
+    font-family: "mache";
+    src: url("font/PaperMache-Regular.ttf");
+}
+
+@font-face {
+    font-family: "cut";
+    src: url("font/Papercut-Regular.otf");
+}
+
+@font-face {
+    font-family: "kind";
+    src: url("font/Paperkind.otf");
 }
 
 #cabecalho {
@@ -34,12 +49,47 @@ a {
 }
 
 #conteudo {
-    display: flex;
+    display: block;
     background-image: url("img/paperBackground.jpg");
     padding: 30px;
     width: auto;
     height: 500px;
-    justify-content: center;
+    justify-items: center;
+}
+
+#celula{
+    margin: 10px;
+}
+
+#conteudo h1{
+    font-size: 60px;
+    color: rgb(65, 38, 33);
+    font-family: "mache";
+    align-content: center;
+    text-align: center;
+    margin: -80px;
+}
+
+#conteudo h2{
+    font-size: 60px;
+    color: rgb(86, 39, 73);
+    font-family: "cut";
+    align-content: center;
+    text-align: center;
+    margin: -80px;
+}
+#conteudo h3{
+    font-size: 40px;
+    color: rgb(96, 72, 45);
+    font-family: "kind";
+    align-content: center;
+    text-align: center;
+    margin: -80px;
+}
+
+#conteudo img{
+    width: 300px;
+    height: 80px;
 }
 
 #origami {
@@ -67,32 +117,41 @@ a {
 
 #formulario input {
     margin: 5px;
+    height: 30px;
 }
 
 #formulario label {
     margin: 5px;
+    height: 30px;
 }
 
 #formulario textarea {
     margin: 5px;
+    height: 150px;
 }
 
 #nome {
     width: 100%;
     margin: 5px;
+    height: 30px;
 }
 
 #email {
     width: 100%;
     margin: 5px;
+    height: 30px;
 }
 
 #sugestao {
     width: 100%;
     margin: 5px;
+    height: 30px;
 }
 
 #enviar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 100px;
     margin: 5px;
 }
@@ -131,7 +190,7 @@ a {
 #burguer {
     display: block;
     background-color: rgb(218, 186, 152);
-    width: 100%;
+    width: auto;
     height: fit-content;
     padding: 15px;
     color: white;
@@ -161,7 +220,7 @@ h1 {
 /*celular*/
 
 /*em pé*/
-@media (max-width: 767px) and (orientation: portrait) {
+@media (max-width: 768px) and (orientation: portrait) {
     #tipo {
         color: red;
         font-size: 250%;
@@ -172,10 +231,20 @@ h1 {
         padding: 5px 15px 5px 15px;
         font-size: 20px;
     }
+
+    #contato {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 25px;
+    }
+
+    #enviar{
+        font-size: 20px;
+    }
 }
 
 /*deitado*/
-@media (max-width: 767px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
     #tipo {
         color: orange;
         font-size: 250%;
@@ -183,7 +252,7 @@ h1 {
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     #burguer {
         display: none;
     }
