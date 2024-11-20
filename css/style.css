@@ -1,5 +1,5 @@
 * {
-    margin: 0%;
+    margin: 0px;
 }
 
 body {
@@ -15,21 +15,22 @@ a {
 
 #cabecalho {
     display: flex;
-    background-color: rgb(0, 0, 0);
-    padding: 30px;
+    background-color: rgb(172, 136, 97);
+    background-size: auto;
+    padding: 20px;
     width: auto;
     height: fit-content;
     justify-content: center;
 }
 
 #cabecalho img {
-    width: 300px;
+    width: 225px;
     height: auto;
 }
 
 #conteudo {
     display: flex;
-    background-color: rgb(50, 50, 50);
+    background-image: url(img/paperBackground.jpg);
     padding: 30px;
     width: auto;
     height: 500px;
@@ -38,7 +39,7 @@ a {
 
 #menu {
     display: none;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(218, 186, 152);
     width: auto;
     list-style: none;
     padding: 5px;
@@ -46,21 +47,21 @@ a {
 
 #menu li {
     display: flex;
-    background-color: rgb(59, 59, 59);
-    border: 2px white solid;
-    border-radius: 10px;
+    background-color: rgb(193, 156, 116);
+    border: 2px rgb(172, 136, 97) solid;
+    border-radius: 5px;
     width: 90%;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 15px 5px 15px;
     height: fit-content;
     font-size: 20px;
     justify-content: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 #burguer {
     display: block;
-    background-color: rgb(29, 29, 29);
-    width: auto;
+    background-color: rgb(218, 186, 152);
+    width: 100%;
     height: fit-content;
     padding: 15px;
     color: white;
@@ -68,10 +69,11 @@ a {
 
 #rodape {
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(172, 136, 97);
+    background-size: auto;
     padding: 30px;
     width: auto;
-    height: fit-content;
+    height: auto;
     justify-content: center;
 }
 
